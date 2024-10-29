@@ -1,0 +1,848 @@
+    body {
+        overflow-x: hidden;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    
+    *,
+    *::before,
+    *::after {
+    box-sizing: border-box;
+    }
+
+    @media (max-width: 768px) {
+        .large-element {
+        width: 100%; /* يضمن ملاءمة العنصر للشاشة الصغيرة */
+        }
+    
+        /* تخصيص إضافي لعناصر معينة */
+        .carousel-item img {
+        width: 100px;
+        height: 100px;
+        }
+    }
+
+    
+
+/* ضبط الشريط العلوي */
+.main-nav .navbar-brand {
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .main-nav .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    /* توسيط الروابط في الشاشات الصغيرة */
+    .navbar-nav {
+        text-align: center;
+    }
+
+    /* ضبط حجم الأيقونات */
+    .icons a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    /* تكبير حجم النصوص في الشاشة الصغيرة */
+    .home h1 {
+        font-size: 2.5rem;
+    }
+
+    .home p {
+        font-size: 1.25rem;
+    }
+}
+
+/* ضبط الأيقونات الاجتماعية لتكون متجاوبة */
+.icons {
+    justify-content: center;
+    padding: 1rem;
+}
+
+.icons a {
+    margin: 0 10px;
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .icons a {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .icons a {
+        font-size: 1.5rem;
+    }
+}
+
+
+.main-nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 20px;
+    z-index: 9999;
+    background-color: #1810108c;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+}
+/* body{
+    font-family: "Poppins", sans-serif;
+} */
+.main-nav .navbar .navbar-brand{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.main-nav .navbar .nav-item .nav-link{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+.main-nav .navbar .nav-item .nav-link.active{
+    position: relative;
+}
+.main-nav .navbar .nav-item .nav-link.active::after{
+    content: " ";
+    width: 52px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 3px;
+    bottom: 10px;
+    transition: all 0.5s;
+}
+.main-nav .navbar .nav-item{
+    margin-inline: 0.5rem;
+}
+.home{
+    height: 100vh;
+    background-image: url(../imgs/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.home .layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home .layer .container h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+.home .layer .container p{
+    font-size: 4rem;
+    font-weight: 200;
+    padding-bottom: 12%;
+}
+.text-type::after{
+    content: "";
+    animation:typed 7s infinite ;
+    font-size: 4rem ;
+    padding-top: 5px;
+}
+@keyframes typed {
+    0%{
+        content: "D|";
+    }
+    3%{
+        content: "De|";
+    }
+    5%{
+        content: "Dev|";
+    } 
+    8%{
+        content: "Deve|";
+    } 
+    10%{
+        content: "Devel|";
+    } 
+    13%{
+        content: "Develo|";
+    }
+    16%{
+        content: "Develop|";
+    } 
+    18%{
+        content: "Develope|";
+    } 
+    20%{
+        content: "Developer|";
+    } 
+    23%{
+        content: "Developer|";
+    }
+    26%{
+        content: "Develope|";
+    }
+    29%{
+        content: "Develop|";
+    }
+    32%{
+        content: "Develo|";
+    }
+    35%{
+        content: "Devel|";
+    }
+    38%{
+        content: "Deve|";
+    }
+    41%{
+        content: "Dev|";
+    }
+    45%{
+        content: "De|";
+    }
+    48%{
+        content: "D|";
+    }
+    50%{
+        content: "D|";
+    }
+    53%{
+        content: "D|";
+    }
+    56%{
+        content: "De|";
+    }
+    59%{
+        content: "Des|";
+    }
+    62%{
+        content: "Desi|";
+    }
+    65%{
+        content: "Desig|";
+    }
+    68%{
+        content: "Design|";
+    }
+    70%{
+        content: "Designe|";
+    }
+    73%{
+        content: "Designer|";
+    }
+    76%{
+        content: "L|";
+    }
+    79%{
+        content: "La|";
+    }
+    80%{
+        content: "Lar|";
+    }
+    82%{
+        content: "Larr|";
+    }
+    85%{
+        content: "Larry|";
+    }
+    87%{
+        content: "Larry D|";
+    }
+    89%{
+        content: "Larry Da|";
+    }
+    91%{
+        content: "Larry Dan|";
+    }
+    93%{
+        content: "Larry Dani|";
+    }
+    95%{
+        content: "Larry Danie|";
+    }
+    97%{
+        content: "Larry Daniel|";
+    }
+    100%{
+        content: "Larry Daniels|";
+    }
+}
+.icons{
+    justify-content: center;
+    align-items: center;
+    padding-top: 25%;
+}
+.icons .icon-5{
+    font-size: 14px;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0,0.3);
+    color: #fff;
+    justify-content: center;
+    padding-left: 10px;
+    margin: 0 2px;
+}
+
+/* إعدادات عامة */
+.container {
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+/* قسم "About" */
+.about-img img {
+    width: 100%;
+    height: auto;
+}
+
+/* إعدادات الشاشات الصغيرة */
+@media (max-width: 768px) {
+    /* محاذاة النصوص والأزرار في قسم "About" */
+    .about-content, .btn-about {
+        text-align: center;
+    }
+    
+    /* تغيير عرض الصورة في قسم "About" لتملأ الشاشة */
+    .about-img img {
+        max-width: 100%;
+    }
+    
+    /* ضبط الأزرار */
+    .btn-about .btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* قسم "Services" */
+.ser-3 {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .ser-3 {
+        text-align: center;
+    }
+
+    /* تقليل المسافات بين الأعمدة */
+    .service-content {
+        padding: 10px;
+    }
+}
+
+/* قسم "Portfolio" */
+.profelio img {
+    width: 100%;
+    height: auto;
+}
+
+.navs .nav-pills .nav-link {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 576px) {
+    /* تكديس أعمدة البورتفوليو في شاشات أصغر */
+    .profelio .col-md-4 {
+        width: 100%;
+    }
+
+    /* ضبط القائمة ليتم عرضها بشكل أفضل على الشاشات الصغيرة */
+    .nav-pills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-pills .nav-item {
+        margin-bottom: 5px;
+    }
+}
+
+    .form-table input[type="text"],
+    .form-table input[type="email"],
+    .form-table textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    }
+
+    .boton-3 {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+    .fin-2 {
+        margin-bottom: 20px;
+    }
+    }
+
+    @media (min-width: 992px) {
+    .form-table {
+        max-width: 800px;
+    }
+    }
+
+    .form-table input[type="text"],
+    .form-table input[type="email"],
+    .form-table textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    }
+
+    .boton-3 {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+    .fin-2 {
+        margin-bottom: 20px;
+    }
+    }
+
+    @media (min-width: 992px) {
+    .form-table {
+        max-width: 800px;
+    }
+    }
+
+
+.aa{
+    width: 80%;
+}
+.aa .about-img img{
+    width: 75%;
+    margin-left: 25%;
+}
+.about .about-content h2{
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+}
+.about .about-content .about-title{
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.about .about-content .about-title2{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+    font-size: 20px;
+}
+.about .about-content .about-title2 .jerry{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 19px;
+    color: #363d3d;
+}
+.btn-about .buton:hover{
+    background-color: #fff;
+    color: black;
+}
+.btn-about .buton-2:hover{
+    background-color: black;
+}
+.Servicess{
+    background: #f7f7f7;
+}
+.service-content h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    position: relative;
+}
+.service-content h2::after{
+    content: "";
+    width:20%;
+    height: 20px;
+    background-image: url(/imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 600px;
+    z-index: -1;
+}
+.ser-3 h3{
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 18px;
+}
+.ser-3 p{
+    word-spacing: 2px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.ser-3 span i{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+    background: #f4f4f4;
+}
+.aaa i:hover{
+    background-color: black;
+    transition: all 1s;
+    color: #fff;
+}
+.profelio{
+    padding-top: 90px;
+}
+.Portfolio-content h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    position: relative;
+}
+.Portfolio-content h3::after{
+    content: "";
+    width:20%;
+    height: 20px;
+    background-image: url(/imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -13px;
+    left: 600px;
+    z-index: -1;
+}
+.navs-img img{
+    width: 85%;
+    
+}
+.navs-img{
+    position: relative;
+}
+.navs-img .img-layer .item-1{
+    padding-top: 35%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.navs-img:hover .item-1{
+    opacity: 4;
+    background-color: #fff;
+    border: 4px solid rgba(0, 0, 0,0.3);
+    transition: all 1s;
+    width: 86%;
+}
+.navs .nav .nav-item .nav-link{
+    color: black;
+    position: relative;
+}
+.navs .nav .nav-item .nav-all::after{
+    content: " ";
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    transition: all 0.5s;
+}
+.item-1  i{
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4px;
+    background-color: black;
+    color: #fff;
+}
+.item-1  i:hover{
+    background-color: #fff;
+    color: black;
+}
+.navs .nav .nav-item .nav-link {
+    background-color: #fff;
+}
+.cli{
+    background-color: #f7f7f7;
+}
+.client-content h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    position: relative;
+}
+.client-content h3::after{
+    content: "";
+    width:20%;
+    height: 20px;
+    background-image: url(/imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 600px;
+    z-index: -1;
+}
+
+.slider-img{
+    width: 80px;
+}
+.sli-con h6{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0 5px;
+}
+.sli-con span{
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 30px;
+}
+.carousel-indicators button{
+    padding: 5px !important;
+    width: 1px !important;
+    height: 1px !important;
+    background-color: #869791 !important;
+    border-radius: 50% !important;
+}
+.carousel-indicators button:hover{
+    background-color: #869791 !important;
+}
+.client-2 .cli-2 h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.client-2 .cli-2 h3::after{
+    content: "";
+    width:20%;
+    height: 20px;
+    background-image: url(/imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 600px;
+    z-index: -1;
+}
+.client-2 .cli-2 span i{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    font-size: 25px;
+}
+.client-2 .cli-2 p{
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 16px;
+    color: #748182;
+}
+.team-1{
+    background: #f7f7f7;
+}
+.tem-img{
+    position: relative;
+}
+.tem-img .layer-img-1{
+    padding-top: 35%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.layer-img-1 i{
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    background-color: black;
+    color: #fff;
+}
+.layer-img-1 i:hover{
+    background-color: #fff;
+    color: black;
+}
+.tem-img:hover .layer-img-1{
+    opacity: 4;
+    background-color: #fff;
+    border: 4px solid rgba(0, 0, 0,0.3);
+    transition: all 1s;
+    width: 90%;
+    height: 100%;
+    
+}
+
+.team-content h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.img-text{
+    background-color: rgba(52, 52, 52, .8);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 400px;
+    height: 100px;
+}
+.img-text h4{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #fff;
+}
+
+.img-text h5{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+.team-2{
+    width: 89%;
+}
+.fin-part{
+    padding-top: 120px;
+    background-color: #fff;
+}
+.final h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+}
+.final h3::after{
+    content: "";
+    width:20%;
+    height: 20px;
+    background-image: url(/imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 600px;
+    z-index: -1;
+}
+.fin-part{
+    padding: 100px 0;
+}
+.fin-2 h6{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.fin-2 p{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+.fin-2 span i{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+    background: #f4f4f4;
+}
+.fin-2 span i:hover{
+    background-color: black;
+    transition: all 0.6s;
+    color: #fff;
+}
+.fin-2-icon{
+    width: 65%;
+}
+.form-table{
+    width: 65%;
+}
+.first-name{
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+}
+.second-name{
+    width: 95%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+}
+.message{
+    height: 150px;
+    width: 200%;
+}
+.boton-3{
+    padding: 5px 35px;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    width: 30%;
+    transition: all 0.6s;
+    padding-bottom: 10px;
+}
+.boton-3:hover{
+    background-color: #fff;
+    color: black;
+}
+.the-end{
+    background: #1c1c1c;
+    padding: 30px;
+}
+.the-end .footer p{
+    font-size: 13px;
+    word-spacing: 2px;
+    color: #748182;
+    line-height: 1.6;
+    margin: 0;
+}
+
